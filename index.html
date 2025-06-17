@@ -392,10 +392,10 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
                         <h3 class="text-xl font-bold text-white mb-2">Rumah Singgah Al-Fatih</h3>
                         <p class="campaign text-gray-400 text-sm mb-4">Optimasi Campaign Tebus Obat</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="text-xs bg-gray-800 text-emerald-400 px-3 py-1 rounded-full">ROAS 5,16%</span>
-                            <span class="text-xs bg-gray-800 text-blue-400 px-3 py-1 rounded-full">Conversion</span>
+                            <span class="tags text-xs bg-gray-800 text-emerald-400 px-3 py-1 rounded-full">ROAS <b class="hidden roas">5,16%</b></span>
+                            <span class="tags text-xs bg-gray-800 text-blue-400 px-3 py-1 rounded-full">Conversion <b class="hidden cr">85.57%</b></span>
                         </div>
-                        <p class="hidden deskripsi">Optimasi campaign Tebus Obat yang dikerjakan pada tahun 2023 ini berhasil mendapatkan donasi sebesar <strong>Rp55.576.542</strong> dengan spend yang dikeluarkan mencapai <b><i>Rp10.770.647</i></b></p>
+                        <p class="hidden deskripsi">Optimasi campaign Tebus Obat yang dikerjakan pada tahun 2023 ini berhasil mendapatkan donasi sebesar <b>Rp55.576.542</b> dengan spend yang dikeluarkan mencapai <b>Rp10.770.647</b></p>
                     </div>
                 </div>
                 
@@ -412,10 +412,10 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
                         <h3 class="text-xl font-bold text-white mb-2">Mihrab Quran</h3>
                         <p class="campaign text-gray-400 text-sm mb-4">Optimasi Campaign Pembebasan Lahan</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="text-xs bg-gray-800 text-emerald-400 px-3 py-1 rounded-full">ROAS 2,07%</span>
-                            <span class="text-xs bg-gray-800 text-blue-400 px-3 py-1 rounded-full">Conversion Rate 75.76%</span>
+                            <span class="tags text-xs bg-gray-800 text-emerald-400 px-3 py-1 rounded-full">ROAS <b class="hidden roas">2,07%</b></span>
+                            <span class="tags text-xs bg-gray-800 text-blue-400 px-3 py-1 rounded-full">Conversion <b class="hidden cr">75.76%</b></span>
                         </div>
-                        <p class="hidden deskripsi">Optimasi campaign Pembebasan Lahan yang sudah dikerjakan sejak tahun 2022 sampai saat ini, sudah berhasil mendapatkan donasi sebesar <strong>Rp92.393.950</strong> dengan spend yang dikeluarkan mencapai <b><i>Rp44.634.758</i></b></p>
+                        <p class="hidden deskripsi">Optimasi campaign Pembebasan Lahan yang sudah dikerjakan sejak tahun 2022 sampai saat ini, sudah berhasil mendapatkan donasi sebesar <b>Rp92.393.950</b> dengan spend yang dikeluarkan mencapai <b>Rp44.634.758</b></p>
                     </div>
                 </div>
                 
@@ -847,7 +847,9 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
                     const category = card.querySelector('span').textContent;
                     const image = card.querySelector('img').src;
                     const description = card.querySelector('.deskripsi').textContent;
-                    const tags = [...card.querySelectorAll('.rounded-full')].map(tag => tag.outerHTML);
+                    const roas = card.querySelector('.roas').textContent;
+                    const cr = card.querySelector('.cr').textContent;
+                    const tags = [...card.querySelectorAll('.tags')].map(tag => tag.outerHTML);
 
                     // Set modal content
                     document.getElementById('modalTitle').textContent = title;
@@ -855,6 +857,8 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
                     document.getElementById('modalCategory').textContent = category;
                     document.getElementById('modalImage').src = image;
                     document.getElementById('modalDescription').textContent = description;
+                    document.getElementById('modalRoas').textContent = roas;
+                    document.getElementById('modalConversion').textContent = cr;
                     
                     // Clear and add tags
                     const tagsContainer = document.getElementById('modalTags');
