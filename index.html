@@ -390,11 +390,12 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
                             <span class="text-xs font-medium text-emerald-400">META ADS</span>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">Rumah Singgah Al-Fatih</h3>
-                        <p class="text-gray-400 text-sm mb-4">Optimasi Campaign Tebus Obat</p>
+                        <p class="campaign text-gray-400 text-sm mb-4">Optimasi Campaign Tebus Obat</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-gray-800 text-emerald-400 px-3 py-1 rounded-full">ROAS 5,16%</span>
                             <span class="text-xs bg-gray-800 text-blue-400 px-3 py-1 rounded-full">Conversion</span>
                         </div>
+                        <p class="deskripsi">Optimasi campaign Tebus Obat yang dikerjakan pada tahun 2023 ini berhasil mendapatkan donasi sebesar <b>Rp55.576.542</b> dengan spend yang dikeluarkan mencapai <i>Rp10.770.647</i></p>
                     </div>
                 </div>
                 
@@ -409,11 +410,12 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
                             <span class="text-xs font-medium text-emerald-400">META ADS</span>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">Mihrab Quran</h3>
-                        <p class="text-gray-400 text-sm mb-4">Optimasi Campaign Pembebasan Lahan</p>
+                        <p class="campaign text-gray-400 text-sm mb-4">Optimasi Campaign Pembebasan Lahan</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="text-xs bg-gray-800 text-emerald-400 px-3 py-1 rounded-full">ROAS 5,16%</span>
+                            <span class="text-xs bg-gray-800 text-emerald-400 px-3 py-1 rounded-full">ROAS 2,07%</span>
                             <span class="text-xs bg-gray-800 text-blue-400 px-3 py-1 rounded-full">Conversion</span>
                         </div>
+                        <p class="deskripsi">Optimasi campaign Pembebasan Lahan yang sudah dikerjakan sejak tahun 2022 sampai saat ini, sudah berhasil mendapatkan donasi sebesar <b>Rp92.393.950</b> dengan spend yang dikeluarkan mencapai <i>Rp44.634.758</i></p>
                     </div>
                 </div>
                 
@@ -428,7 +430,7 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
                             <span class="text-xs font-medium text-emerald-400">META ADS</span>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">Rumah Singgah Al-Fatih</h3>
-                        <p class="text-gray-400 text-sm mb-4">Optimasi Campaign Tebus Obat</p>
+                        <p class="campaign text-gray-400 text-sm mb-4">Optimasi Campaign Tebus Obat</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-gray-800 text-emerald-400 px-3 py-1 rounded-full">ROAS 5,16%</span>
                             <span class="text-xs bg-gray-800 text-blue-400 px-3 py-1 rounded-full">Conversion</span>
@@ -448,7 +450,7 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
                             <span class="text-xs font-medium text-emerald-400">META ADS</span>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">Rumah Singgah Al-Fatih</h3>
-                        <p class="text-gray-400 text-sm mb-4">Optimasi Campaign Tebus Obat</p>
+                        <p class="campaign text-gray-400 text-sm mb-4">Optimasi Campaign Tebus Obat</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-gray-800 text-emerald-400 px-3 py-1 rounded-full">ROAS 5,16%</span>
                             <span class="text-xs bg-gray-800 text-blue-400 px-3 py-1 rounded-full">Conversion</span>
@@ -468,7 +470,7 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
                             <span class="text-xs font-medium text-emerald-400">META ADS</span>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">Rumah Singgah Al-Fatih</h3>
-                        <p class="text-gray-400 text-sm mb-4">Optimasi Campaign Tebus Obat</p>
+                        <p class="campaign text-gray-400 text-sm mb-4">Optimasi Campaign Tebus Obat</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-gray-800 text-emerald-400 px-3 py-1 rounded-full">ROAS 5,16%</span>
                             <span class="text-xs bg-gray-800 text-blue-400 px-3 py-1 rounded-full">Conversion</span>
@@ -488,7 +490,7 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
                             <span class="text-xs font-medium text-emerald-400">META ADS</span>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">Rumah Singgah Al-Fatih</h3>
-                        <p class="text-gray-400 text-sm mb-4">Optimasi Campaign Tebus Obat</p>
+                        <p class="campaign text-gray-400 text-sm mb-4">Optimasi Campaign Tebus Obat</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs bg-gray-800 text-emerald-400 px-3 py-1 rounded-full">ROAS 5,16%</span>
                             <span class="text-xs bg-gray-800 text-blue-400 px-3 py-1 rounded-full">Conversion</span>
@@ -841,9 +843,10 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
             projectCards.forEach(card => {
                 card.addEventListener('click', () => {
                     const title = card.querySelector('h3').textContent;
-                    const subtitle = card.querySelector('p').textContent;
+                    const subtitle = card.querySelector('.campaign').textContent;
                     const category = card.querySelector('span').textContent;
                     const image = card.querySelector('img').src;
+                    const description = card.querySelector('.deskripsi').textContent;
                     const tags = [...card.querySelectorAll('.rounded-full')].map(tag => tag.outerHTML);
 
                     // Set modal content
@@ -851,6 +854,7 @@ Keahlian ini saya gunakan untuk membantu tim atau klien membangun sistem yang an
                     document.getElementById('modalSubtitle').textContent = subtitle;
                     document.getElementById('modalCategory').textContent = category;
                     document.getElementById('modalImage').src = image;
+                    document.getElementById('modalDescription').textContent = description;
                     
                     // Clear and add tags
                     const tagsContainer = document.getElementById('modalTags');
